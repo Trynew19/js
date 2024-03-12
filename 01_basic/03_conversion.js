@@ -28,3 +28,5 @@ const dataa = String(details)
 console.log(dataa);
 console.log(typeof dataa);
 
+console.log(2%3);
+
