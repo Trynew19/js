@@ -39,7 +39,7 @@ const hundred = 1000000000000;
 
 console.log(Math.random());
 
-console.log((Math.random()*10) + 1);
+console.log((Math.random()*10) + 1);   // 10 se multi is liye kiye hai taki ak point right m aaye number aur 1 is liye hai ki 1 se chhota n aaye 
 
 // console.log(Math.floor(Math.random()*10) +1 );
 
