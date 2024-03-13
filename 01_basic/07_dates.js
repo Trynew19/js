@@ -34,6 +34,11 @@ const timestamp =  Date.now()
 let newdate = new Date()
 
 console.log(newdate);
-console.log(newdate.getDay());
-console.log(newdate);
-console.log(newdate);
+// console.log(newdate.getDay());
+// console.log(newdate.getMonth());
+// console.log(newdate);
+
+let dateee = newdate.toLocaleString('default',{
+    weekday:"long"
+})
+console.log(dateee);
