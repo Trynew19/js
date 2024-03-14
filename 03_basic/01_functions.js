@@ -43,4 +43,49 @@ function loginmessage(username = "krishna"){  //bydefault username ka value kris
 
 } 
 
-console.log(loginmessage("rahul"));
+// console.log(loginmessage("rahul"));
+
+
+
+// rest opratore
+
+function calculatecartprice (...num1){      // yha tin dot lga dene se ham parameters m jitna bhi value dalenge usko yah ak sath array ke form m de dega
+    return num1
+
+}
+
+// console.log(calculatecartprice(5,5,66,78,96));
+
+
+// object handle with function
+
+const user = {
+    name:"krishna chauhan",
+    age:35
+}
+
+function handleObject(anyobject){
+
+    // console.log(`username is ${anyobject.name} and age is ${anyobject.age}`);
+}
+
+// handleObject(user)
+handleObject({
+    name:"rahul",
+    age:32
+})
+
+
+
+// array with function
+
+const newArray = [1,2,3,4,5,6,5]
+
+
+function printsecondvalue (getArray){
+    return getArray[1]
+
+}
+
+// console.log(printsecondvalue(newArray));
+console.log(printsecondvalue([255,6685,886]));
