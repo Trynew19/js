@@ -36,7 +36,7 @@ const user = {
 const krishna = ()=>{
     const username = "krishna chauhan"
 
-    console.log(this);
+    // console.log(this);
 }
 
 // krishna()
@@ -51,4 +51,16 @@ const krishna = ()=>{
 // const addtwo = (num1,num2)=> num1 + num2            // or (num1 + num2 ) bhi likh sakte hai
 const addtwo = (num1,num2)=> (num1 + num2)          // it called is implshut return
 
-console.log(addtwo(55,666))
+// console.log(addtwo(55,666))
+
+
+
+// IIFE+++++ Immediately invoked function expression
+
+// ( function onedfg () {
+//     console.log("krishna chauhan");
+// } )();
+
+(()=>{
+    console.log("rahul kumar");
+})()
