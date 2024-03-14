@@ -57,9 +57,9 @@ const addtwo = (num1,num2)=> (num1 + num2)          // it called is implshut ret
 
 // IIFE+++++ Immediately invoked function expression
 
-// ( function onedfg () {
-//     console.log("krishna chauhan");
-// } )();
+( function onedfg () {
+    console.log("krishna chauhan");
+} )();
 
 (()=>{
     console.log("rahul kumar");
