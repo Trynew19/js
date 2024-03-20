@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Event Name -->
+
+    <!-- type, timesstamp , defaultPrevented
+        
+        target , toElement , srcElement , currentTarget ,
+
+        clientX, clientY, screenX, screenY,
+
+        altkey,ctrlkey , shiftkey,keycode
+    -->
+
+    <div class="images">
+        <li>
+            <img width="200px" src="https://images.unsplash.com/photo-1682685797208-c741d58c2eff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        </li>
+        <li>
+            <img width="200px" src="https://images.unsplash.com/photo-1707343843982-f8275f3994c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        </li>
+        <li>
+            <img width="200px" src="https://plus.unsplash.com/premium_photo-1710631508355-fb67bb79cd74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        </li>
+        <li>
+            <img width="200px" src="https://images.unsplash.com/photo-1699959560616-aa17ace76879?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        </li>
+        <li>
+            <img width="200px" src="https://images.unsplash.com/photo-1709842665072-6404e47a5386?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        </li>
+        
+    </div>
+    
+</body>
+
+<script>
+    document.querySelector('.images').addEventListener("click",function(e){
+        //  console.log(e.target.parentNode);       //target kis par click hua hai aur parentNode uska father div koun sa hai
+        //  console.log(e.target.tagName);
+
+    //   let   removeIt = e.target.parentNode
+
+      if (e.target.tagName === "IMG") {
+          
+        console.log(e.target.tagName);
+         let removeIt = e.target.parentNode
+        removeIt.remove();
+        
+      }
+
+
+        //  removeIt.parentNode.removeChild(removeIt)
+                                                 
+
+                                                  
+ 
+         
+    },false)
+</script>
+</html>
