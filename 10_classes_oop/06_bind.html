@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>click me</button>
+</body>
+<script>
+    class React {
+         constructor(){
+            this.server = "https:krishanan:55020";
+            this.libary = "react"
+
+
+    //  requirment
+    document
+    .querySelector('button')
+    .addEventListener("click",this.handleButton.bind(this))  // jab tak bind ka use nhi karenge to handlebutton ke andar this.server ke value ko access nhi kar sakte aur jab ham bind ka use karte hai tab usme tatkal ke bind ke andar this pas kar dete hai aur vah access ho jata hai
+
+
+
+         }
+
+         handleButton(){
+            console.log("button clicked");
+            console.log(this.server);
+            console.log(this);
+         }
+        
+    }
+
+    const app = new React()
+</script>
+</html>
